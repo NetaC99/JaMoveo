@@ -1,0 +1,27 @@
+[
+  [
+    { "lyrics": "On" },
+    { "lyrics": "a" },
+    { "lyrics": "dark", "chords": "Bm" },
+    { "lyrics": "desert", "chords": "F#" },
+    { "lyrics": "highway", "chords": "A" }
+  ],
+  [
+    { "lyrics": "Cool" },
+    { "lyrics": "wind", "chords": "E" },
+    { "lyrics": "in" },
+    { "lyrics": "my", "chords": "G" },
+    { "lyrics": "hair" }
+  ],
+  [
+    { "lyrics": "Warm" },
+    { "lyrics": "smell", "chords": "D" },
+    { "lyrics": "of" },
+    { "lyrics": "colitas", "chords": "Em" },
+    { "lyrics": "rising" },
+    { "lyrics": "up" },
+    { "lyrics": "through" },
+    { "lyrics": "the" },
+    { "lyrics": "air" }
+  ]
+] 

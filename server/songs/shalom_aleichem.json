@@ -1,0 +1,23 @@
+{
+  "artist": "מסורתי",
+  "image": "https://easydrawingguides.com/wp-content/uploads/2017/05/how-to-draw-an-angel-featured-image-1200-1.png",
+  "lines": [
+    [
+      { "lyrics": "שלום", "chords": "Am" },
+      { "lyrics": "עליכם" }
+    ],
+    [
+      { "lyrics": "מלאכי", "chords": "Dm" },
+      { "lyrics": "שלום" }
+    ],
+    [
+      { "lyrics": "מלאכי", "chords": "G" },
+      { "lyrics": "עליון" }
+    ],
+    [
+      { "lyrics": "ממלך", "chords": "C" },
+      { "lyrics": "מלכי", "chords": "E" },
+      { "lyrics": "המלכים" }
+    ]
+  ]
+} 
