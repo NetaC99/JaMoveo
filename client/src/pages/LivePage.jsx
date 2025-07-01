@@ -1,4 +1,4 @@
-import React, { useEffect, useRef, useState } from 'react';
+import React, { useEffect, useRef, useState, useMemo } from 'react';
 import { useNavigate } from 'react-router-dom';
 import { useSocket } from '../contexts/SocketContext.jsx';
 import { useAuth } from '../contexts/AuthContext.jsx';
@@ -70,6 +70,15 @@ export default function LivePage() {
     return () => clearInterval(scrollInterval.current);
   }, [scrolling]);
 
+  // Detect if song contains Hebrew characters to set RTL direction
+  const isHebrew = useMemo(() => {
+    if (!song) return false;
+    const hebrewRegex = /[\u0590-\u05FF]/;
+    return song.lines.some((lineGroup) =>
+      lineGroup.some((word) => hebrewRegex.test(word.lyrics))
+    );
+  }, [song]);
+
   if (!song) {
     return (
       <div className="flex items-center justify-center h-full">
@@ -86,10 +95,19 @@ export default function LivePage() {
 
   return (
     <div className="h-full flex flex-col">
-      <header className="p-4 bg-gray-900 text-center text-2xl font-bold">
+      <header
+        className="p-4 bg-gray-900 text-center text-2xl font-bold"
+        dir={isHebrew ? 'rtl' : 'ltr'}
+      >
         {song.title} - {song.artist}
       </header>
-      <div ref={containerRef} className="flex-1 overflow-y-auto p-6 space-y-4 text-3xl leading-snug">
+      <div
+        ref={containerRef}
+        className={`flex-1 overflow-y-auto p-6 space-y-4 text-3xl leading-snug ${
+          isHebrew ? 'text-right' : ''
+        }`}
+        dir={isHebrew ? 'rtl' : 'ltr'}
+      >
         {song.lines.map((lineGroup, idx) => (
           <p key={idx}>
             {lineGroup.map((word, wIdx) => (
