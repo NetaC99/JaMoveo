@@ -33,5 +33,3 @@ The task was to build a live song application that lets an admin choose a song a
 1. shalom aleichem – Song in hebrew with image and author
 2. epic test song – Long song to test the scrolling down feature
 3. שיר בדיקה - song with hebrew name
-
-[MIT](https://choosealicense.com/licenses/mit/)
