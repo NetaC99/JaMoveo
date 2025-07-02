@@ -1,5 +1,5 @@
 # JaMoveo
-The task was to build a live song application that lets an admin choose a song and broadcast its lyrics (with optional chords) to every connected in real time.
+The task was to build a live song application that lets an admin choose a song and broadcast its lyrics (with optional chords) to every connected in real time
 
 ## Requirements and how they were met:
 
@@ -28,6 +28,7 @@ The task was to build a live song application that lets an admin choose a song a
 4. Search a song you would like and choose one song from the results
 5. The song will be played to everyone logged in
 
+note: the server allows only one admin account!
 
 ### Special songs
 1. shalom aleichem – Song in hebrew with image and author
